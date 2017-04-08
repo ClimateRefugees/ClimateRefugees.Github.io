@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_section -->
+<html lang="en-US" class="gr__w3schools_com"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;correlator=431190194906139&amp;output=json_html&amp;callback=googletag.impl.pubads.callbackProxy1&amp;impl=fif&amp;eid=108809080%2C108809132&amp;sc=1&amp;sfv=1-0-7&amp;iu=%2F16833175%2FTryitLeaderboard&amp;sz=728x90%7C970x90&amp;cust_params=content%3Dtrytags&amp;cookie_enabled=1&amp;lmt=1491405007&amp;dt=1491405007708&amp;cc=14&amp;frm=20&amp;biw=1281&amp;bih=632&amp;oid=3&amp;adx=0&amp;ady=0&amp;adk=2150845696&amp;gut=v2&amp;ifi=1&amp;u_tz=-240&amp;u_his=1&amp;u_h=800&amp;u_w=1280&amp;u_ah=774&amp;u_aw=1280&amp;u_cd=24&amp;u_nplug=4&amp;u_nmime=5&amp;u_sd=2&amp;flash=0&amp;url=https%3A%2F%2Fwww.w3schools.com%2Ftags%2Ftryit.asp%3Ffilename%3Dtryhtml5_section&amp;ref=https%3A%2F%2Fwww.w3schools.com%2Ftags%2Ftag_section.asp&amp;dssz=28&amp;icsg=9187&amp;std=0&amp;vrg=113&amp;vrp=113&amp;ga_vid=603207413.1486612257&amp;ga_sid=1491404994&amp;ga_hid=934519855&amp;ga_fc=true&amp;ga_wpids=UA-80950036-41"></script><script src="./Tryit Editor v3.3_files/rules-p-31iz6hfFutd16.js"></script><script src="./Tryit Editor v3.3_files/quant.js" async="" type="text/javascript"></script><script async="" src="./Tryit Editor v3.3_files/beacon.js"></script><script src="./Tryit Editor v3.3_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Tryit Editor v3.3_files/ga.js"></script><script async="" type="text/javascript" src="./Tryit Editor v3.3_files/gpt.js"></script><script async="" src="./Tryit Editor v3.3_files/analytics.js"></script><script data-cfasync="false" data-pagespeed-no-defer="">var __ez=__ez||{};__ez.evt={};__ez.ck={};__ez.template={};__ez.evt.add=function(el,evt,handler){if(el.addEventListener){el.addEventListener(evt,handler,false)}else if(el.attachEvent){el.attachEvent('on'+evt,handler)}else{el['on'+evt]=handler()}};__ez.ck.get=function(n,e){null!==e&&(n=n+"_"+e);for(var t=n+"=",r=decodeURIComponent(document.cookie),o=r.split(";"),i=0;i<o.length;i++){for(var u=o[i];" "===u.charAt(0);)u=u.substring(1);if(0===u.indexOf(t))return u.substring(t.length,u.length)}return""};var EzoicPixel=function(){this.pixels=[],this.pixelUrl="/ezoic/e.gif",("undefined"!=typeof ezJsu&&ezJsu===!0||"undefined"!=typeof _ez_sa&&_ez_sa===!0||"undefined"!=typeof window.isAmp&&isAmp===!0)&&(this.pixelUrl="//g.ezoic.net"+this.pixelUrl),this.tEpoch=0,"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(this.tEpoch=_ezaq.t_epoch)},EzoicPixelData=function(a,b){this.name=a,this.val=b};EzoicPixel.prototype={constructor:EzoicPixel,AddAndFireImpPixel:function(a,b){this.AddImpPixel(a,b,0,0,0,0,0),this.FirePixels()},AddAndFirePVPixel:function(a,b){this.AddPVPixel(a,b),this.FirePixels()},AddImpPixel:function(a,b,c,d,e,f,g){if(this.isDefined(a,a.getSlotElementId)){var h=parseInt(a.getTargeting("ap")[0]),i=a.getSizes()[0],j=i.l.toString()+"x"+i.j.toString(),k="0",l="XX";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(k=_ezaq.domain_id.toString()),"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(l=_ezaq.country);var m=this.getSlotIID(a),n=a.getSlotElementId();this.isDefined(m,n)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:m,domain_id:k,unit:n,t_epoch:this.tEpoch,revenue:c,est_revenue:d,ad_position:h,ad_size:j,bid_floor_filled:e,bid_floor_prev:f,stat_source_id:g,country_code:l,data:b}))}},AddImpPixelById:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString());var d=a.split("/");if(this.isDefined(a)&&3===d.length&&this.validateData(b)){var e=d[0],f=d[2];b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:f,domain_id:c,unit:e,t_epoch:this.tEpoch,data:b})}},AddPVPixel:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString()),this.isDefined(a)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"pageview",pageview_id:a,domain_id:c,t_epoch:this.tEpoch,data:b}))},FirePixels:function(){"undefined"!=typeof document.visibilityState&&"prerender"===document.visibilityState||(this.isDefined(this.pixels)&&this.pixels.length>0&&((new Image).src=this.pixelUrl+"?orig="+(__ez.template.isOrig===!0?1:0)+"&pixels="+encodeURIComponent(JSON.stringify(this.pixels))),this.pixels=[])},NewData:function(a,b){return new EzoicPixelData(a,b)},convertDataToStr:function(a){if("undefined"==typeof a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},getSlotIID:function(a){var b=0;try{var c=a.getTargetingMap(),d=a.getSlotElementId();if(d.indexOf("div-gpt-ad")===-1)return b;if("undefined"!=typeof c)for(var e in c)if(e.indexOf("iid")!==-1&&"undefined"!=typeof c[e][0]){b=c[e][0];break}}catch(a){}return b},isDefined:function(){for(var a=0;a<arguments.length;a++)if("undefined"==typeof arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0},validateData:function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof EzoicPixelData==!1)return console.error("Invalid pixelData. ",a[b]),!1;return!0}};__ez.queue=function(){function e(e,i,n,r,s,o,a,l){var u=new f.file(e,i,n,r,s,o,a);l===!0?d[e]=u:h[e]=u,c[e]=u,t(u)}function i(e,i,n,r,s,o,a,u){s===!0&&(e=e+"_"+l++);var p=new f.func(e,i,n,r,o,a);u===!0?d[e]=p:h[e]=p,c[e]=p,t(p)}function t(e){n(e)!==!0&&e.process()}function n(e){if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var t=e.blockedBy[i];if(c.hasOwnProperty(t)===!1)return r(e.name+" blocked = "+t),!0;if(e.proceedIfError===!0&&c[t].isError===!0)return!1;if(c[t].isComplete===!1)return r(e.name+" blocked = "+t),!0}return!1}function r(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i"),n=t.exec(i),r=n?n[1]:null;"1"===r&&console.debug(e)}function s(){a++,a>10||(r("let's go"),o(d),o(h))}function o(e){for(var i in e)if(e.hasOwnProperty(i)!==!1){var t=e[i];t.isComplete===!0||n(t)||t.isInitialized===!0||t.isError===!0?t.isError===!0?r(t.name+": error"):t.isComplete===!0?r(t.name+": complete already"):t.isInitialized===!0&&r(t.name+": initialized already"):t.process()}}var a=0,l=0,c=[],d=[],h=[],f={func:function(e,i,t,n,s,o){var a=this;this.name=e,this.funcName=i,this.parameters=null===t?null:t instanceof Array?t:[t],this.isBlock=!1,this.blockedBy=n,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=o,this.process=function(){r("... func = "+e),a.isInitialized=!0,a.isComplete=!0;var i=a.funcName.split(".");i.length>3||(3===i.length?window[i[0]][i[1]][i[2]].apply(null,this.parameters):2===i.length?window[i[0]][i[1]].apply(null,this.parameters):window[a.funcName].apply(null,this.parameters)),this.deleteWhenComplete===!0&&delete c[e]}},file:function(e,i,t,n,o,a,l){var c=this;this.name=e,this.path=i,this.async=o,this.defer=a,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=l,this.process=function(){c.isInitialized=!0,r("... file = "+e);var t=document.createElement("script");t.src=i,o===!0?t.async=!0:a===!0&&(t.defer=!0),t.onerror=function(){r("----- ERR'D: "+c.name),c.isError=!0,c.isBlock===!0&&s()},t.onreadystatechange=t.onload=function(){var e=t.readyState;r("----- F'D: "+c.name),(!e||/loaded|complete/.test(e))&&(c.isComplete=!0,c.isBlock===!0&&s())},document.getElementsByTagName("head")[0].appendChild(t)}}};return{addFile:e,addFunc:i,items:c}}();__ez.template.isOrig=true;</script>
+<title>Tryit Editor v3.3</title>
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./Tryit Editor v3.3_files/w3.css">
+<link rel="stylesheet" href="./Tryit Editor v3.3_files/codemirror.css">
+<script src="./Tryit Editor v3.3_files/codemirror.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-3855518-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- Ezoic Ad Testing Code-->
+
+<!-- Ezoic Ad Testing Code-->
+<!-- EZOIC_REMOVE_BEGIN -->
+<script>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+<script type="text/javascript">
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+  var leaderMapping = googletag.sizeMapping().
+  // Mobile ad
+  addSize([0, 0], [320, 50]). 
+  // Vertical Tablet ad
+  addSize([468, 0], [468, 60]). 
+  // Horizontal Tablet
+  addSize([728, 0], [728, 90]).
+  // Desktop and bigger ad
+  addSize([970, 0], [[728, 90], [970, 90]]).build();
+  // addSize([970, 0], [728, 90]).build();
+  gptAdSlots[0] = googletag.defineSlot('/16833175/TryitLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1428407818244-0').
+  // gptAdSlots[0] = googletag.defineSlot('/16833175/TryitLeaderboard', [728, 90], 'div-gpt-ad-1428407818244-0').
+  defineSizeMapping(leaderMapping).addService(googletag.pubads());
+  googletag.pubads().setTargeting("content","try" + (function () {
+    var folder = location.pathname;
+    folder = folder.replace("/", "");
+    folder = folder.substr(0, folder.indexOf("/"));
+    return folder;
+  })()
+  );
+  googletag.enableServices();
+});
+</script>
+<!-- EZOIC_REMOVE_END -->
+<script>
+if (window.addEventListener) {              
+    window.addEventListener("resize", browserResize);
+} else if (window.attachEvent) {                 
+    window.attachEvent("onresize", browserResize);
+}
+var xbeforeResize = window.innerWidth;
+
+function browserResize() {
+    var afterResize = window.innerWidth;
+    if ((xbeforeResize < (970) && afterResize >= (970)) || (xbeforeResize >= (970) && afterResize < (970)) ||
+        (xbeforeResize < (728) && afterResize >= (728)) || (xbeforeResize >= (728) && afterResize < (728)) ||
+        (xbeforeResize < (468) && afterResize >= (468)) ||(xbeforeResize >= (468) && afterResize < (468))) {
+        xbeforeResize = afterResize;
+        googletag.cmd.push(function() {
+            googletag.pubads().refresh([gptAdSlots[0]]);
+        });
+    }
+    if (window.screen.availWidth <= 768) {
+      restack(window.innerHeight > window.innerWidth);
+    }
+    fixDragBtn();
+    showFrameSize();    
+}
+var fileID = "";
+var loadSave = false;
+function getSavedFile() {
+    loadSave = true;
+    var htmlCode;
+    var paramObj = {};
+    paramObj.fileid = "";
+    fileID = paramObj.fileid;
+    var paramA = JSON.stringify(paramObj);
+    var httpA = new XMLHttpRequest();
+    httpA.open("POST", globalURL, true);
+    httpA.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpA.onreadystatechange = function() {
+        if(httpA.readyState == 4 && httpA.status == 200) {
+            document.getElementById("textareaCode").value = httpA.responseText;
+            window.editor.getDoc().setValue(httpA.responseText);
+            loadSave = false;
+        }
+    }
+    httpA.send(paramA);   
+}
+
+</script>
+<style>
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  color:#000000;
+  margin:0px;
+  font-size:100%;
+}
+.trytopnav {
+  height:40px;
+  overflow:hidden;
+  min-width:380px;
+  position:absolute;
+  width:100%;
+  top:99px;
+}
+.w3-navbar button {
+  border:none;
+  padding:8px 16px;
+  display:block;
+}
+a.w3schoolslink {
+  padding:0 !important;
+  display:inline !important;
+}
+a.w3schoolslink:hover,a.w3schoolslink:active {
+  text-decoration:underline !important;
+  background-color:transparent !important;
+}
+#dragbar{
+  position:absolute;
+  cursor: col-resize;
+  z-index:3;
+  padding:5px;
+}
+#shield {
+  display:none;
+  top:0;
+  left:0;
+  width:100%;
+  position:absolute;
+  height:100%;
+  z-index:4;
+}
+#framesize span {
+  font-family:Consolas, monospace;
+}
+#container {
+  background-color:#f1f1f1;
+  width:100%;
+  overflow:auto;
+  position:absolute;
+  top:138px;
+  bottom:0;
+  height:auto;
+}
+#textareacontainer, #iframecontainer {
+  float:left;
+  height:100%;
+  width:50%;
+}
+#textarea, #iframe {
+  height:100%;
+  width:100%;
+  padding-bottom:10px;
+  padding-top:1px;
+}
+#textarea {
+  padding-left:10px;
+  padding-right:5px;  
+}
+#iframe {
+  padding-left:5px;
+  padding-right:10px;  
+}
+#textareawrapper {
+  width:100%;
+  height:100%;
+  background-color: #ffffff;
+  position:relative;
+  box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#iframewrapper {
+  width:100%;
+  height:100%;
+  -webkit-overflow-scrolling: touch;
+  background-color: #ffffff;
+  box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#textareaCode {
+  background-color: #ffffff;
+  font-family: consolas,"courier new",monospace;
+  font-size:15px;
+  height:100%;
+  width:100%;
+  padding:8px;
+  resize: none;
+  border:none;
+  line-height:normal;    
+}
+.CodeMirror.cm-s-default {
+  line-height:normal;
+  padding: 4px;
+  height:100%;
+  width:100%;
+}
+#iframeResult, #iframeSource {
+  background-color: #ffffff;
+  height:100%;
+  width:100%;  
+}
+#stackV {background-color:#999999;}
+#stackV.horizontal,#stackV.horizontal,#gDriveBtn {background-color:transparent;}
+#stackV.horizontal:hover,#gDriveBtn:hover {background-color:#d3d3d3;}
+#stackH,#stackH,#gDriveBtn {background-color:transparent;}
+#stackH:hover {background-color:#d3d3d3;}
+#stackH.horizontal {background-color:#999999;}
+#textareacontainer.horizontal,#iframecontainer.horizontal{
+  height:50%;
+  float:none;
+  width:100%;
+}
+#textarea.horizontal{
+  height:100%;
+  padding-left:10px;
+  padding-right:10px;
+}
+#iframe.horizontal{
+  height:100%;
+  padding-right:10px;
+  padding-bottom:10px;
+  padding-left:10px;  
+}
+#container.horizontal{
+  min-height:200px;
+  margin-left:0;
+}
+#tryitLeaderboard {
+  overflow:hidden;
+  text-align:center;
+  margin-top:5px;
+  height:90px;
+}
+.w3-navbar li button{
+  cursor:pointer;
+}
+@media screen and (max-width: 727px) {
+  .trytopnav {top:70px;}
+  #container {top:108px;}
+}
+@media screen and (max-width: 467px) {
+  .trytopnav {top:60px;}
+  #container {top:98px;}
+}
+@media only screen and (max-device-width: 768px) {
+  #iframewrapper {overflow: auto;}
+  #container     {min-width:320px;}
+  .stack         {display:none;}
+  #tryhome       {display:block;}
+}
+
+@font-face {
+font-family: 'fontawesome';
+src:url('../lib/fonts/fontawesome.eot?14663396');
+src:url('../lib/fonts/fontawesome.eot?14663396#iefix') format('embedded-opentype'),
+    url('../lib/fonts/fontawesome.woff?14663396') format('woff'),
+    url('../lib/fonts/fontawesome.ttf?14663396') format('truetype'),
+    url('../lib/fonts/fontawesome.svg?14663396#fontawesome') format('svg');
+font-weight:normal;
+font-style:normal;
+}
+.fa {
+  display:inline-block;
+  font:normal normal normal 14px/1 FontAwesome;
+  font-size:inherit;
+  text-rendering:auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  transform:translate(0,0);
+}
+.fa-2x {
+  font-size:2em;
+}
+.fa-home:before {content: '\e800'; }
+.fa-save:before {content: '\e804'; }
+.loader {
+    border: 6px solid #f3f3f3; /* Light grey */
+    border-top: 6px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+#saveLoader {
+    margin:20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#iframewrapper {
+	
+}
+</style>
+<!--[if lt IE 8]>
+<style>
+#textareacontainer, #iframecontainer {width:48%;}
+#container {height:500px;}
+#textarea, #iframe {width:90%;height:450px;}
+#textareaCode, #iframeResult {height:450px;}
+.stack {display:none;}
+</style>
+<![endif]-->
+<link rel="canonical" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_section">
+<script data-cfasync="false" type="text/javascript">window.google_analytics_uacct = "UA-80950036-41";</script>
+<script data-cfasync="false" type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['e._setAccount', 'UA-80950036-41']);
+_gaq.push(['f._setAccount', 'UA-38339005-1']);
+_gaq.push(['e._setDomainName', 'w3schools.com']);
+_gaq.push(['f._setDomainName', 'w3schools.com']);
+_gaq.push(['e._setCustomVar',1,'template','old_site_gc',3]);
+_gaq.push(['e._setCustomVar',2,'t','126',3]);
+_gaq.push(['e._setCustomVar',3,'rid','0',2]);
+_gaq.push(['e._setCustomVar',4,'bra','mod18',3]);
+_gaq.push(['f._setSampleRate', '5']);
+_gaq.push(['e._setSampleRate', '5']);
+_gaq.push(['e._setAllowAnchor',true]);
+_gaq.push(['e._setSiteSpeedSampleRate', 10]);
+_gaq.push(['f._setCustomVar',1,'template','old_site_gc',3]);
+_gaq.push(['f._setCustomVar',2,'domain','w3schools.com',3]);
+_gaq.push(['f._setSiteSpeedSampleRate', 20]);
+_gaq.push(['e._trackPageview']);
+_gaq.push(['f._trackPageview']);
+
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">var ezouid = "428061164";</script><!--<base href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_section">--><base href="."><script type="text/javascript">
+var ezoTemplate = 'old_site_gc';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script><!-- START EZHEAD -->
+<script type="text/javascript">
+var soc_app_id = '0';
+var did = 34890;
+var ezdomain = 'w3schools.com';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+<script type="text/javascript" data-cfasync="false">var _ezaq = {"ab_test_id":"mod18","ab_test_val":"","adgroup_rank_id":-1,"browser":"Chrome","browser_version":57,"country":"US","device_height":528,"device_width":1280,"domain_id":34890,"engaged_time_visit":0,"forensiq_score":-1,"form_factor_id":1,"ip":"151.188.227.237","landing_page_url":"https://www.w3schools.com/tags/tag_section.asp","os":"MacOSX","page_ad_positions":"","page_view_id":"74aaa9ee-883f-4d0d-478f-084a636182b1","pv_event_count":0,"referrer_id":0,"referring_domain":"w3schools.com","region":"us-east-1","serverid":"54.160.118.121:13963","t_epoch":1491405006,"template_id":126,"time_on_site_visit":0,"url":"https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_section","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36","user_id":428061164,"visit_id":927633668,"visit_uuid":"43e68fde-675a-4779-57d2-5442d2f70337"};var _ezExtraQueries = "&ez_orig=1";</script><script data-cfasync="false" type="text/javascript" src="https://www.w3schools.com/ezoic/impt.js?cb=153-3&amp;v=10" async=""></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_113.js" async=""></script><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-7/html/container.html"></head>
+<div class="gr-top-z-index gr-top-zero" tabindex="-1"><div data-reactroot="" class="_970ef1-hoverMenu _970ef1-referral" style="transform: translate(1101px, 588px);"><div class="_970ef1-panel"><div class="_970ef1-tooltip _970ef1-tooltip_hidden undefined"></div><div class="_970ef1-buttonArea"><div class="_970ef1-btn _970ef1-btn_disable" tabindex="-1"></div></div><div class="_970ef1-buttonArea"><div class="_970ef1-referralArea" tabindex="-1"><div class="_970ef1-btn _970ef1-btn_referral"></div><span class="_970ef1-referralText">Invite Friends</span></div></div><div class="_970ef1-line"></div><div class="_970ef1-buttonArea"><div class="_970ef1-btn _970ef1-btn_grammarly" data-action="editor" tabindex="-1"></div></div></div></div></div><div style="visibility: hidden; top: -9999px; position: absolute; opacity: 0;"><div data-reactroot="" class="_970ef1-hoverMenu _970ef1-referral" style="transform: translate(1267px, 603px);"><div class="_970ef1-panel"><div class="_970ef1-tooltip _970ef1-tooltip_hidden undefined"></div><div class="_970ef1-buttonArea"><div class="_970ef1-btn _970ef1-btn_disable" tabindex="-1"></div></div><div class="_970ef1-buttonArea"><div class="_970ef1-referralArea" tabindex="-1"><div class="_970ef1-btn _970ef1-btn_referral"></div><span class="_970ef1-referralText">Invite Friends</span></div></div><div class="_970ef1-line"></div><div class="_970ef1-buttonArea"><div class="_970ef1-btn _970ef1-btn_grammarly" data-action="editor" tabindex="-1"></div></div></div></div></div><body data-gr-c-s-loaded="true">
+
+
+<div id="tryitLeaderboard" style="background-color:#ffffff">
+<!-- TryitLeaderboard -->
+<!-- Ezoic - Leaderboard - top_of_page -->
+<div id="ezoic-pub-ad-placeholder-103">
+<div id="div-gpt-ad-1428407818244-0">
+<script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1428407818244-0'); });</script>
+<div id="google_ads_iframe_/16833175/TryitLeaderboard_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/16833175/TryitLeaderboard_0" title="3rd party ad content" name="google_ads_iframe_/16833175/TryitLeaderboard_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Tryit Editor v3.3_files/saved_resource.html"></iframe></div></div>
+</div>
+<!-- End Ezoic - TryitLeaderboard - top_of_page -->
+</div>
+<script>globalURL = 'https://tryit.w3schools.com/code_datas.php';</script>
+<div id="saveModal" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="hideAndResetModal()" class="w3-closebtn">×</span>
+      <div id="preSave" class="w3-panel">
+        <h2>Save Your Code</h2>
+        <p>If you click the save button, your code will be saved, and you get an URL you can share with others.</p>
+        <div style="height:34px">
+        <p>
+            <button class="w3-btn w3-green" style="margin-right:15px" title="Save" onclick="saveFile(document.getElementById(&#39;textareaCode&#39;).value);">Save</button>
+            <button class="w3-btn w3-red" title="Cancel" style="margin-right:15px" onclick="hideAndResetModal();">Cancel</button>
+        </p>
+        </div>
+        <p>By clicking the "Save" button you agree to our <a href="javascript:void(0);" class="w3-hover-text-green" onclick="document.getElementById(&#39;saveDisclaimer&#39;).style.display=&#39;block&#39;;">terms and conditions</a>.</p>
+        <p><a href="https://www.w3schools.com/default.asp" onclick="event.preventDefault();displayError()">Report Error</a></p>
+        <div id="saveDisclaimer" style="display:none;">
+          <p>All code in shared files are supplied by users, and belongs to the poster.</p>
+          <p>All shared files are made public. No license is enforced.</p>
+          <p>Any code can be removed without warning (if it is deemed offensive, damaging or for any other reason).</p>        
+          <p>w3schools.com are not responsible or liable for any loss or damage of any kind during the usage of provided code.</p>
+        </div>
+      </div>
+      <div id="errorSave" style="display:none" class="w3-panel">
+          <h2>Your Code Could Not be Saved</h2>
+          <p>The code has too many characters.</p>
+      </div>
+      <div id="postSave" class="w3-panel" style="display:none;">
+        <div id="saveLoader" class="loader"></div>
+        <div id="saveModalSaved" style="display:none">
+          <h2>Your Code has Been Saved</h2>
+          <p>File has been saved to: <a id="shareLink" class="w3-hover-text-green" href="javascript:void(0);" target="_blank"><span id="shareLinkText"></span></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="driveModal" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="resetModal()" class="w3-closebtn">×</span>
+      <div id="driveText" class="w3-panel w3-large">
+        <h2>Save to Google Drive</h2>
+        <p>If you have a Google account, you can save this code to your Google Drive.</p>
+        <p>Google will ask you to confirm Google Drive access.</p>
+        <p><label class="w3-label w3-text-black"><b>Save file as:</b></label>
+        <input class="w3-input w3-border" type="text" id="googleFileName" value="tryhtml5_section">
+        <button class="w3-btn w3-light-grey w3-hover-grey w3-hover-text-white w3-margin-top" title="Save file to Google Drive" onclick="handleAuthClick(event,&#39;save&#39;)"><img style="margin-right:5px" alt="Save file to Google Drive" title="Save file to Google Drive" src="./Tryit Editor v3.3_files/driveicon.png">Save file</button>
+        </p><h2>Open from Google Drive</h2>
+        <p>If you have saved a file to Google Drive, you can open it here:</p>
+        <p><button class="w3-btn w3-light-grey w3-hover-grey w3-hover-text-white" title="Open file from Google Drive" onclick="handleAuthClick(event,&#39;open&#39;)"><img style="margin-right:5px" alt="Open file from Google Drive" title="Open file from Google Drive" src="./Tryit Editor v3.3_files/driveicon.png">Open file</button></p>
+      </div>
+      <div class="w3-panel w3-large loader" id="driveSavedPanel" style="display:none">
+      <p id="driveSavedText"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="trytopnav">
+<ul class="w3-navbar w3-light-grey" style="border-top:1px solid #f1f1f1;overflow:auto">
+  <li class="stack" id="tryhome" style="width:auto !important;float:left;"><a href="https://www.w3schools.com/" target="_blank" title="w3schools.com Home" class="topnav-icons fa fa-home" style="font-size:28px;color:#999999;margin-top:-2px"></a></li>
+  <li class="stack" style="width:auto !important;float:left;"><button title="Vertically" onclick="restack(false)" id="stackV"><img src="./Tryit Editor v3.3_files/stack_vertically.png" alt="Stack Vertically"></button></li>
+  <li class="stack" style="width:auto !important;float:left;"><button title="Horizontally" onclick="restack(true)" id="stackH"><img src="./Tryit Editor v3.3_files/stack_horizontally.png" alt="Stack Horizontally"></button></li>
+  <li id="gDrive" style="width:auto !important;float:left;" class="w3-hide-medium w3-hide-small"><button id="gDriveBtn" title="Google Drive" onclick="click_google_savebtn()"><img src="./Tryit Editor v3.3_files/driveicon.png" alt="Google Drive" title="Google Drive"></button></li>
+  <li style="width:auto !important;float:left;"><a href="javascript:void(0);" class="topnav-icons fa fa-save" style="font-size:28px;color:#999999;margin-top:-2px" title="Save" onclick="click_savebtn()"></a></li>
+  <li style="width:auto !important;float:left;"><button class="w3-green w3-hover-white w3-hover-text-green" onclick="submitTryit(1)">Run »</button></li>
+  <li class="w3-right w3-hide-medium w3-hide-small" style="width:auto !important;float:left;"><span style="padding:8px 8px 8px 8px;display:block"></span></li>
+  <li class="w3-right w3-hide-small"><span style="padding:8px 0;display:block;float:right;"><span id="framesize">Result Size: <span>626 x 483</span></span></span></li>
+</ul>
+</div>
+<div id="shield" style="display: none;"></div>
+<a href="javascript:void(0)" id="dragbar" style="width: 5px; top: 138px; left: 635.5px; height: 483px; cursor: col-resize;"></a>
+<div id="container">
+  <div id="textareacontainer">
+    <div id="textarea">
+      <div id="textareawrapper">
+        <textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false" style="display: none;">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;section&gt;
+  &lt;h1&gt;WWF&lt;/h1&gt;
+  &lt;p&gt;The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+  &lt;h1&gt;WWF's Panda symbol&lt;/h1&gt;
+  &lt;p&gt;The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The section tag is not supported in Internet Explorer 8 and earlier versions.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea><div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 212px; left: 341px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="width: 18px; pointer-events: none;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true" style="height: 18px; pointer-events: none;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-height: 450px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 337px; top: 204px; height: 17px;">&nbsp;</div></div><div class="CodeMirror-code"><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml cm-meta">&lt;!DOCTYPE html&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">html</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">body</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">&#8203;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">section</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">style</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"background-color:red;"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">h1</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml">WWF</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">h1</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">p</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml">The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">p</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">section</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">&#8203;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">section</span><span class="cm-m-xml"> </span><span class="cm-m-xml cm-attribute">style</span><span class="cm-m-xml">=</span><span class="cm-m-xml cm-string">"background-color:blue;"</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">h1</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml">WWF's Panda symbol</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">h1</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml"> &nbsp;</span><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">p</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml">The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">p</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">section</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">&#8203;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml cm-tag cm-bracket">&lt;</span><span class="cm-m-xml cm-tag">p</span><span class="cm-m-xml cm-tag cm-bracket">&gt;&lt;</span><span class="cm-m-xml cm-tag">strong</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml">Note:</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">strong</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span><span class="cm-m-xml"> The section tag is not supported in Internet Explorer 8 and earlier versions.</span><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">p</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">&#8203;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">body</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-m-xml cm-tag cm-bracket">&lt;/</span><span class="cm-m-xml cm-tag">html</span><span class="cm-m-xml cm-tag cm-bracket">&gt;</span></span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">&#8203;</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 450px;"></div><div class="CodeMirror-gutters" style="display: none; height: 480px;"></div></div></div>
+        <form id="codeForm" autocomplete="off" style="margin:0px;display:none;">
+          <input type="hidden" name="code" id="code">
+        </form>
+       </div>
+    </div>
+  </div>
+  <div id="iframecontainer">
+    <div id="iframe">
+      <div id="iframewrapper"><iframe frameborder="0" id="iframeResult" name="iframeResult" data-gramm_id="d4503f2f-2e64-915f-d48c-42ec6ddaf6dc" data-gramm="true" gramm-ifr="true" style="height: 483px;" src="./Tryit Editor v3.3_files/saved_resource(1).html"></iframe><grammarly-btn><div data-reactroot="" class="_e725ae-textarea_btn _e725ae-not_focused" style="z-index: 2; transform: translate(1241px, 454px);"><div class="_e725ae-transform_wrap"><div title="Protected by Grammarly" class="_e725ae-status">&nbsp;</div></div></div></grammarly-btn></div>
+    </div>
+  </div>
+</div>
+<div id="err_form" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content">
+      <span onclick="document.getElementById(&#39;err_form&#39;).style.display=&#39;none&#39;" class="w3-closebtn w3-text-white w3-padding">×</span>
+      <div class="w3-container w3-green">
+        <h2>Report a Problem:</h2>
+      </div>
+<form class="w3-container"> 
+<p><label for="err_email">Your E-mail:</label>
+<input class="w3-input w3-border" type="text" style="width:100%" id="err_email" name="err_email">   
+</p>
+<p>
+<label for="err_email">Page address:</label>
+<input class="w3-input w3-border" type="text" style="width:100%" id="err_url" name="err_url" disabled="disabled">
+</p>
+<p>
+<label for="err_email">Description:</label>
+<textarea rows="10" class="w3-input w3-border" id="err_desc" name="err_desc" style="width:100%;"></textarea>   
+</p>
+<button class="w3-btn w3-right w3-green w3-margin-bottom" type="button" onclick="sendErr()">Submit</button>
+</form>
+
+  </div>
+</div>
+<script>
+submitTryit()
+
+function submitTryit(n) {
+  if (window.editor) {
+    window.editor.save();
+  }
+  var text = document.getElementById("textareaCode").value;
+  var ifr = document.createElement("iframe");
+  ifr.setAttribute("frameborder", "0");
+  ifr.setAttribute("id", "iframeResult");
+  ifr.setAttribute("name", "iframeResult");  
+  document.getElementById("iframewrapper").innerHTML = "";
+  document.getElementById("iframewrapper").appendChild(ifr);
+  if (loadSave == true ) {
+    ifr.setAttribute("src", "/code/opentext.htm");
+  } else if (fileID != "" && loadSave == false) {
+    var t=text;
+    t=t.replace(/=/gi,"w3equalsign");
+    t=t.replace(/\+/gi,"w3plussign");    
+    var pos=t.search(/script/i)
+    while (pos>0) {
+      t=t.substring(0,pos) + "w3" + t.substr(pos,3) + "w3" + t.substr(pos+3,3) + "tag" + t.substr(pos+6);
+	    pos=t.search(/script/i);
+    }
+    document.getElementById("code").value=t;
+    document.getElementById("codeForm").action = "https://tryit.w3schools.com/tryit_view.php?x=" + Math.random();
+    document.getElementById('codeForm').method = "post";
+    document.getElementById('codeForm').acceptCharset = "utf-8";
+    document.getElementById('codeForm').target = "iframeResult";
+    document.getElementById("codeForm").submit();
+  } else {
+    var ifrw = (ifr.contentWindow) ? ifr.contentWindow : (ifr.contentDocument.document) ? ifr.contentDocument.document : ifr.contentDocument;
+    ifrw.document.open();
+    ifrw.document.write(text);  
+    ifrw.document.close();
+    //23.02.2016: contentEditable is set to true, to fix text-selection (bug) in firefox.
+    //(and back to false to prevent the content from being editable)
+    //(To reproduce the error: Select text in the result window with, and without, the contentEditable statements below.)  
+    if (ifrw.document.body && !ifrw.document.body.isContentEditable) {
+      ifrw.document.body.contentEditable = true;
+      ifrw.document.body.contentEditable = false;
+    }
+  }
+}
+if ((window.screen.availWidth <= 768 && window.innerHeight > window.innerWidth) || "" == " horizontal") {restack(true);}
+function restack(horizontal) {
+    var tc, ic, t, i, c, f, sv, sh, d, height, flt, width;
+    tc = document.getElementById("textareacontainer");
+    ic = document.getElementById("iframecontainer");
+    t = document.getElementById("textarea");
+    i = document.getElementById("iframe");
+    c = document.getElementById("container");    
+    sv = document.getElementById("stackV");
+    sh = document.getElementById("stackH");
+    tc.className = tc.className.replace("horizontal", "");
+    ic.className = ic.className.replace("horizontal", "");        
+    t.className = t.className.replace("horizontal", "");        
+    i.className = i.className.replace("horizontal", "");        
+    c.className = c.className.replace("horizontal", "");                        
+    sv.className = sv.className.replace("horizontal", "");
+    sh.className = sh.className.replace("horizontal", "");
+    stack = "";
+    if (horizontal) {
+        tc.className = tc.className + " horizontal";
+        ic.className = ic.className + " horizontal";        
+        t.className = t.className + " horizontal";        
+        i.className = i.className + " horizontal";                
+        c.className = c.className + " horizontal";                
+        sv.className = sv.className + " horizontal";                        
+        sh.className = sh.className + " horizontal";
+        stack = " horizontal";
+        document.getElementById("textareacontainer").style.height = "50%";
+        document.getElementById("iframecontainer").style.height = "50%";
+        document.getElementById("textareacontainer").style.width = "100%";
+        document.getElementById("iframecontainer").style.width = "100%";
+    } else {
+        document.getElementById("textareacontainer").style.height = "100%";
+        document.getElementById("iframecontainer").style.height = "100%";
+        document.getElementById("textareacontainer").style.width = "50%";
+        document.getElementById("iframecontainer").style.width = "50%";
+    }
+    if (window.editor) {
+      window.editor.refresh();
+    }
+    fixDragBtn();
+    showFrameSize();
+}
+function showFrameSize() {
+  var t;
+  var width, height;
+  width = Number(w3_getStyleValue(document.getElementById("iframeResult"), "width").replace("px", "")).toFixed();
+  height = Number(w3_getStyleValue(document.getElementById("iframeResult"), "height").replace("px", "")).toFixed();
+  document.getElementById("framesize").innerHTML = "Result Size: <span>" + width + " x " + height + "</span>";
+}
+var dragging = false;
+var stack;
+function fixDragBtn() {
+  var textareawidth, leftpadding, dragleft, containertop, buttonwidth
+  var containertop = Number(w3_getStyleValue(document.getElementById("container"), "top").replace("px", ""));
+  if (stack != " horizontal") {
+    document.getElementById("dragbar").style.width = "5px";    
+    textareasize = Number(w3_getStyleValue(document.getElementById("textareawrapper"), "width").replace("px", ""));
+    leftpadding = Number(w3_getStyleValue(document.getElementById("textarea"), "padding-left").replace("px", ""));
+    buttonwidth = Number(w3_getStyleValue(document.getElementById("dragbar"), "width").replace("px", ""));
+    textareaheight = w3_getStyleValue(document.getElementById("textareawrapper"), "height");
+    dragleft = textareasize + leftpadding + (leftpadding / 2) - (buttonwidth / 2);
+    document.getElementById("dragbar").style.top = containertop + "px";
+    document.getElementById("dragbar").style.left = dragleft + "px";
+    document.getElementById("dragbar").style.height = textareaheight;
+    document.getElementById("dragbar").style.cursor = "col-resize";
+    
+  } else {
+    document.getElementById("dragbar").style.height = "5px";
+    if (window.getComputedStyle) {
+        textareawidth = window.getComputedStyle(document.getElementById("textareawrapper"),null).getPropertyValue("height");
+        textareaheight = window.getComputedStyle(document.getElementById("textareawrapper"),null).getPropertyValue("width");
+        leftpadding = window.getComputedStyle(document.getElementById("textarea"),null).getPropertyValue("padding-top");
+        buttonwidth = window.getComputedStyle(document.getElementById("dragbar"),null).getPropertyValue("height");
+    } else {
+        dragleft = document.getElementById("textareawrapper").currentStyle["width"];
+    }
+    textareawidth = Number(textareawidth.replace("px", ""));
+    leftpadding = Number(leftpadding .replace("px", ""));
+    buttonwidth = Number(buttonwidth .replace("px", ""));
+    dragleft = containertop + textareawidth + leftpadding + (leftpadding / 2);
+    document.getElementById("dragbar").style.top = dragleft + "px";
+    document.getElementById("dragbar").style.left = "5px";
+    document.getElementById("dragbar").style.width = textareaheight;
+    document.getElementById("dragbar").style.cursor = "row-resize";        
+  }
+}
+function dragstart(e) {
+  e.preventDefault();
+  dragging = true;
+  var main = document.getElementById("iframecontainer");
+}
+function dragmove(e) {
+  if (dragging) 
+  {
+    document.getElementById("shield").style.display = "block";        
+    if (stack != " horizontal") {
+      var percentage = (e.pageX / window.innerWidth) * 100;
+      if (percentage > 5 && percentage < 98) {
+        var mainPercentage = 100-percentage;
+        document.getElementById("textareacontainer").style.width = percentage + "%";
+        document.getElementById("iframecontainer").style.width = mainPercentage + "%";
+        fixDragBtn();
+      }
+    } else {
+      var containertop = Number(w3_getStyleValue(document.getElementById("container"), "top").replace("px", ""));
+      var percentage = ((e.pageY - containertop + 20) / (window.innerHeight - containertop + 20)) * 100;
+      if (percentage > 5 && percentage < 98) {
+        var mainPercentage = 100-percentage;
+        document.getElementById("textareacontainer").style.height = percentage + "%";
+        document.getElementById("iframecontainer").style.height = mainPercentage + "%";
+        fixDragBtn();
+      }
+    }
+    showFrameSize();    
+  }
+}
+function dragend() {
+  document.getElementById("shield").style.display = "none";
+  dragging = false;
+  if (window.editor) {
+    window.editor.refresh();
+  }
+}
+if (window.addEventListener) {              
+  document.getElementById("dragbar").addEventListener("mousedown", function(e) {dragstart(e);});
+  document.getElementById("dragbar").addEventListener("touchstart", function(e) {dragstart(e);});
+  window.addEventListener("mousemove", function(e) {dragmove(e);});
+  window.addEventListener("touchmove", function(e) {dragmove(e);});
+  window.addEventListener("mouseup", dragend);
+  window.addEventListener("touchend", dragend);
+  window.addEventListener("load", fixDragBtn);
+  window.addEventListener("load", showFrameSize);
+}
+function click_savebtn() {
+  if (window.editor) {
+    window.editor.save();
+  }
+  document.getElementById('saveModal').style.display = 'block';
+}
+function click_google_savebtn() {
+  if (window.editor) {
+    window.editor.save();
+  }
+  document.getElementById('driveModal').style.display='block'
+}
+function colorcoding() {  
+  window.editor = CodeMirror.fromTextArea(document.getElementById("textareaCode"), {
+    mode: "text/html",
+    htmlMode: true,
+    lineWrapping: true,
+    smartIndent: false,
+    addModeClass: true
+  });
+//  window.editor.on("change", function () {window.editor.save();});
+}
+colorcoding();
+
+function w3_getStyleValue(elmnt,style) {
+    if (window.getComputedStyle) {
+        return window.getComputedStyle(elmnt,null).getPropertyValue(style);
+    } else {
+        return elmnt.currentStyle[style];
+    }
+}
+//SAVE AND OPEN SCRIPT
+var oauthToken;
+var userAction;
+var pickerApiLoaded;
+var developerKey = 'AIzaSyAMZDPXiGcCNWs1UCWG9LS6kkW5YiABfJ0';
+var CLIENT_ID = '451843133508-ckbr5r6ch1ofqbmh87oll4u6ltinqv2t.apps.googleusercontent.com';
+var SCOPES = ['https://www.googleapis.com/auth/drive.file'];
+
+//Check if current user has authorized this application
+function checkAuth() {
+    gapi.auth.authorize(
+    {
+        'client_id': CLIENT_ID,
+        'scope': SCOPES.join(' '),
+        'immediate': true
+    }, handleAuthResult);
+}
+
+//Handle response from authorization server
+function handleAuthResult(authResult) {
+    if (authResult && !authResult.error) {
+        oauthToken = authResult.access_token;
+        loadApi();
+    }
+}
+
+// Initiate auth flow in response to user clicking authorize button
+function handleAuthClick(event,userClick) {
+    userAction = userClick;
+    gapi.auth.authorize(
+        {client_id: CLIENT_ID, scope: SCOPES, immediate: false},
+        handleAuthResult);
+    return false;
+}
+
+// Load API library
+function loadApi() {
+    gapi.client.load('drive', 'v3');
+    gapi.load('picker', {'callback': onPickerApiLoad});
+}
+function onPickerApiLoad() {
+    pickerApiLoaded = true;
+    if (userAction=="save") {
+        userAction="";
+        document.getElementById('driveText').style.display='none';
+        document.getElementById('driveSavedPanel').style.display='block';
+        createFileWithHTMLContent(document.getElementById('googleFileName').value,document.getElementById('textareaCode').value)     
+    }
+    if (userAction=="open") {
+        userAction="";
+        createPicker();
+    }
+}
+
+// Create and render a Picker object for picking HTML file
+function createPicker() {
+    if (pickerApiLoaded) {
+        var view = new google.picker.View(google.picker.ViewId.DOCS);
+        view.setMimeTypes("text/html");
+        var picker = new google.picker.PickerBuilder().
+            addView(view).
+            setOAuthToken(oauthToken).
+            setDeveloperKey(developerKey).
+            setCallback(pickerCallback).
+            build();
+        picker.setVisible(true);
+    }
+}
+// Put content of file in tryit editor
+function pickerCallback(data) {
+    var docID = '';
+    if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED) {
+        var doc = data[google.picker.Response.DOCUMENTS][0];
+        docID = doc[google.picker.Document.ID];
+        getContentOfFile(docID);
+    }
+}
+
+//Get contents
+function getContentOfFile(theID){
+    gapi.client.request({'path': '/drive/v2/files/'+theID,'method': 'GET',callback: function ( theResponseJS, theResponseTXT ) {
+        var myToken = gapi.auth.getToken();
+        var myXHR   = new XMLHttpRequest();
+        myXHR.open('GET', theResponseJS.downloadUrl, true );
+        myXHR.setRequestHeader('Authorization', 'Bearer ' + myToken.access_token );
+        myXHR.onreadystatechange = function( theProgressEvent ) {
+            if (myXHR.readyState == 4) {
+                if ( myXHR.status == 200 ) {
+                    var code = myXHR.response;
+                    document.getElementById("textareaCode").value=code;
+                    window.editor.getDoc().setValue(code);
+                    submitTryit(1);
+                    resetModal();
+                }
+            }
+        }
+        myXHR.send();
+        }
+    });
+}
+
+var createFileWithHTMLContent = function(name,data,callback) {
+    const boundary = '-------314159265358979323846';
+    const delimiter = "\r\n--" + boundary + "\r\n";
+    const close_delim = "\r\n--" + boundary + "--";
+    const contentType = 'text/html';
+
+    var metadata = {
+        'name': name,
+        'mimeType': contentType
+    };
+
+    var multipartRequestBody =
+        delimiter +
+        'Content-Type: application/json\r\n\r\n' +
+        JSON.stringify(metadata) +
+        delimiter +
+        'Content-Type: ' + contentType + '\r\n\r\n' +
+        data +
+        close_delim;
+
+    var request = gapi.client.request({
+        'path': '/upload/drive/v3/files',
+        'method': 'POST',
+        'params': {'uploadType': 'multipart'},
+        'headers': {
+            'Content-Type': 'multipart/related; boundary="' + boundary + '"'
+        },
+        'body': multipartRequestBody});
+    if (!callback) {
+        callback = function(file) {
+            console.log(file);
+            document.getElementById("driveSavedText").innerHTML = file.name + " saved in Google Drive";
+            document.getElementById("driveSavedPanel").className = "w3-panel w3-large";
+        };
+    }
+    request.execute(callback);
+}
+
+if (navigator.userAgent.indexOf("MSIE") > 0 || navigator.userAgent.indexOf("Edge") > 0) {
+    document.getElementById("gDrive").style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == document.getElementById('driveModal')) {
+    resetModal();
+  }
+}
+
+function resetModal() {
+    document.getElementById('driveSavedText').innerHTML='';
+    document.getElementById('driveModal').style.display='none'
+    document.getElementById('driveSavedPanel').style.display='none'
+    document.getElementById('driveText').style.display='block'
+    document.getElementById("driveSavedPanel").className = "w3-panel w3-large loader";
+}
+function saveFile(code) {
+    document.getElementById('preSave').style.display='none';
+    if (code.length>20000) {
+        document.getElementById('errorSave').style.display='block';    
+        return;
+    }
+    document.getElementById('postSave').style.display='block';    
+    var paramObj = {};
+    paramObj.code = code;
+    var paramB = JSON.stringify(paramObj);
+    var httpB = new XMLHttpRequest();
+    httpB.open("POST", globalURL, true);
+
+    httpB.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    httpB.onreadystatechange = function() {
+    if(httpB.readyState == 4 && httpB.status == 200) {
+        if(httpB.responseText.substr(0,2) == "OK" ) {
+          var getId = httpB.responseText.substr(2);
+          document.getElementById("shareLink").href = "/code/tryit.asp?filename=" + getId;
+          document.getElementById("shareLinkText").innerHTML = "https://www.w3schools.com/code/tryit.asp?filename=" + getId;
+          document.getElementById('saveLoader').style.display = "none";
+          document.getElementById("saveModalSaved").style.display  = "block";
+        }
+    }
+    }
+    httpB.send(paramB);
+}
+function hideAndResetModal() {
+    document.getElementById("saveModal").style.display = "none";
+    document.getElementById('preSave').style.display = "block";
+    document.getElementById('errorSave').style.display = "none";    
+    document.getElementById('postSave').style.display = "none";
+    document.getElementById("saveModalSaved").style.display = "none";
+    document.getElementById('saveDisclaimer').style.display= "none";
+    document.getElementById('saveLoader').style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == document.getElementById("saveModal")) {
+        hideAndResetModal();
+    }
+
+}
+var addr = document.location.href;
+function displayError() {
+  document.getElementById("err_url").value = addr;
+  document.getElementById("err_form").style.display = "block";
+  document.getElementById("err_email").focus();
+  hideSent();
+}
+function hideError() {
+  document.getElementById("err_form").style.display = "none";
+}
+function hideSent() {
+  document.getElementById("err_sent").style.display = "none";
+}
+function sendErr() {
+  var xmlhttp;
+  var err_url = document.getElementById("err_url").value;
+  var err_email = document.getElementById("err_email").value;
+  var err_desc = document.getElementById("err_desc").value;
+  if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp = new XMLHttpRequest();
+  } else {// code for IE6, IE5
+    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.open("POST", "/err_sup.asp", true);
+  xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xmlhttp.send("err_url=" + err_url + "&err_email=" + err_email + "&err_desc=" + escape(err_desc));
+  document.getElementById("err_desc").value = "";
+  hideError();
+  document.getElementById("err_sent").style.display = "block";
+}
+</script>
+
+<script src="./Tryit Editor v3.3_files/client.js" gapi_processed="true"></script>
+
+
+<!--Begin comScore Tag--><script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20015427"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el)})();</script><noscript>&lt;img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=20015427&amp;cv=2.0&amp;cj=1"/&gt;</noscript><!--End comScore Tag-->
+<!--Quantcast Tag--><script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt)})();_qevents.push({qacct:"p-31iz6hfFutd16",labels:"Domain.w3schools_com,DomainId.34890"});</script><noscript>&lt;div style="display:none;"&gt;&lt;img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.w3schools_com,DomainId.34890"border="0"height="1"width="1"alt="Quantcast"/&gt;&lt;/div&gt;</noscript><!--End Quantcast tag-->
+<script type="text/javascript" src="./Tryit Editor v3.3_files/ezf-min.php" style="display:none;" async=""></script>
+
+<iframe name="oauth2relay650440066" id="oauth2relay650440066" src="./Tryit Editor v3.3_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><iframe src="./Tryit Editor v3.3_files/auth.html" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body><div style="visibility: hidden; top: -9999px; position: absolute; opacity: 0;"></div><div style="visibility: hidden; top: -9999px; position: absolute; opacity: 0;"></div><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
